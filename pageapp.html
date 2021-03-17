@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es_co">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard HULK Store | Ejercicio UI/UX | Rafael Castillo @Todo1</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<ul class="navbar__menu">
+				<li class="navbar__logo">
+					<a href="#">
+						<img src="img/LogoHulkStore.svg">
+					</a>
+				</li>
+				<li class="item"><a href="index.html">Volver al sitio</a></li>
+				<li class="item"><a href="#">Productos</a></li>
+				<li class="item button"><a href="pageapp.html">Log Out</a></li>
+				<li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<main>
+	<div class="contenedor">
+		<div class="card">
+			<h3 class="card__title">Bienvenido </h3>
+			<div class="card__user">
+				<img class="card__userimg" src="img/avatar.jpg"></img>
+				<div class="card__user__info">
+					<h4 class="card__name">John Doe</h4> 
+					<p><b>email: </b> johnDoe@ejemplo.net</p>
+					<p><b>Telefono: </b> (+57) 315 5230620</p>
+					<p>Su ultima conexion fue: <span>16/03/2021  11:46p.m.</span></p>					
+				</div><!-- /.user info -->	
+			</div><!-- /.card user -->	
+		</div><!-- /.card -->
+	</div><!-- /.contenedor -->
+
+	<div class="contenedor">
+		<div class="row-widgets">
+			<div class="info-box bg-pink">
+				<div class="info-box__icon">
+					<i class="fa fa-paper-plane" aria-hidden="true"></i>
+				</div>
+				<div class="info-box__content">
+					<div class="info-box__content__text">Salidas</div><!-- /.text -->
+					<div class="info-box__content__conteo">12</div><!-- /.conteo -->
+					
+				</div><!-- /.content-->
+			</div><!-- /.info box -->
+			<div class="info-box bg-green">
+				<div class="info-box__icon">
+					<i class="fa fa-cart-plus" aria-hidden="true"></i>
+				</div>
+				<div class="info-box__content">
+					<div class="info-box__content__text">Nuevos Ingresos</div><!-- /.text -->
+					<div class="info-box__content__conteo">125</div><!-- /.conteo -->
+					
+				</div><!-- /.content-->
+			</div><!-- /.info box -->
+			<div class="info-box bg-cyan">
+				<div class="info-box__icon">
+					<i class="fa fa-tasks" aria-hidden="true"></i>
+				</div>
+				<div class="info-box__content">
+					<div class="info-box__content__text">Almacen</div><!-- /.text -->
+					<div class="info-box__content__conteo">5</div><!-- /.conteo -->
+					
+				</div><!-- /.content-->
+			</div><!-- /.info box -->
+			<div class="info-box ">
+				<div class="info-box__icon">
+					<i class="fa fa-rss" aria-hidden="true"></i>
+
+				</div>
+				<div class="info-box__content">
+					<div class="info-box__content__text">Proveedores</div><!-- /.text -->
+					<div class="info-box__content__conteo">1</div><!-- /.conteo -->
+					
+				</div><!-- /.content-->
+			</div><!-- /.info box -->
+		</div>	<!-- /.row widgets -->
+	</div><!-- /.contenedor -->
+
+	<div class="contenedor">
+		<div class="card">
+			<h3 class="card__title">Lista Tareas</h3>
+			<div class="card__content">
+				<table class="table dashboard-task-infos">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tareas</th>
+                            <th>Estado</th>
+                            <th>Administrador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Revisar Inventario</td>
+                            <td><span class="label bg-green">En Proceso</span></td>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Actualizar Stock</td>
+                            <td><span class="label ">To Do</span></td>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>llamar Proveedores</td>
+                            <td><span class="label bg-red">On Hold</span></td>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cambios</td>
+                            <td><span class="label ">To Do</span></td>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Distribucion</td>
+                            <td>
+                                <span class="label bg-red">Cancelado</span>
+                            </td>
+                            <td>John Doe</td>
+                        </tr>
+                    </tbody>
+                </table>
+			</div><!-- /.card content -->
+			
+		</div><!-- /.card -->
+		<div class="card">
+			<h3 class="card__title">Visits</h3>
+			<div class="card__content ">
+				<div class="barras-grid chart-wrap">
+					<div class="bar" style="--bar-value:45%;" data-name="Enero" title="Enero 450"></div>
+					<div class="bar" style="--bar-value:23%;" data-name="Febrero" title="Febrero 230"></div>
+					<div class="bar" style="--bar-value:70%;" data-name="Marzo" title="Marzo 700"></div>
+					<div class="bar" style="--bar-value:38%;" data-name="Abril" title="Abril 380"></div>
+					<div class="bar" style="--bar-value:35%;" data-name="Mayo " title="Mayo 350"></div>
+					<div class="bar" style="--bar-value:30%;" data-name="Junio" title="Julio 300"></div>
+				</div><!-- /.barras grid -->
+			</div><!--- /.content -->
+		</div><!-- /.card -->
+	</div><!-- /.contenedor -->
+</main>
+	<footer>
+		<p class="copy">Rafael Castillo | &copy; Copyright 2021</p>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
